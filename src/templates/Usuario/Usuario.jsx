@@ -7,26 +7,32 @@ const Usuario = () => {
 
     return (
         <div className="d-flex">
-           <Sidebar />
-           <div className="p-3 w-100">
-           <Header 
-                    goto={'/home'}
-                    title={'Usuário'}
-                    logo={logo}
-                    />
-               <section className="m-2 p-2 shadow-lg">
-                    <div className="d-flex justify-content-around">
-                        <Link to={'/usuarionovo'} 
-                            className="btn btn-lg btn-primary">
-                            Novo Usuário
-                        </Link>
-                        <Link to={'/usuarioslista'} 
-                            className="btn btn-lg btn-warning">
-                            Lista de Usuários
-                        </Link>
-                    </div>
-                </section>
-           </div>
+            <div className="p-3 w-100">
+                <header>
+                    <aside>
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul className="menu" data-theme='t-orange'>
+                                <Link to={'/'}><li>Inico <br /><FaHome></FaHome></li></Link>
+                                <Link to={'/home'}><li>Ip <br /><FaNetworkWired></FaNetworkWired></li></Link>
+                                <Link to={'https://discord.com/invite/yKATAKqrpK'}><li>Discord <br /><FaDiscord></FaDiscord></li></Link>
+                                <Link to={'https://mapa.streamcraft.com.br'}><li>Mapa <br /><FaMap></FaMap></li></Link>
+                                <Link to={'/usuario'}><li>Tutorial <br /><FaBook></FaBook></li></Link>
+                                <Link to={'/agenda'}><li>Vip (em progresso) <FaStar></FaStar></li></Link>
+                            </ul>
+                        </div>
+                    </aside>
+                </header>
+            </div>
+            <footer>
+                <Link to={'/login'}
+                    className='btn btn-sm btn-warning'>
+                    em progresso
+                </Link>
+            </footer>
         </div>
     )
 }

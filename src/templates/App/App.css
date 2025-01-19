@@ -1,13 +1,361 @@
-footer{
-    background-color: antiquewhite;
-    padding: 10px;
-    text-align: center;
+footer {
+  background-image: url('../../assets/images/download.jpeg');
+  padding: 10px;
+  text-align: center;
 }
 
-.menu{
-    background-color: brown; 
- }
- 
- .menu a {
-     color: aqua;
- }
+body {
+  background-image: url('../../assets/images/bg-mn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  /* Alterado para min-height */
+}
+
+.ss {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 88vh;
+  border-radius: 10px;
+  /* Alterado para min-height */
+}
+
+.menu {
+  background-image: url('../../assets/images/bg-mn.png');
+  background-size: cover;
+  background-position: center;
+  min-width: 20vh;
+}
+
+.menu a li {
+  color: azure;
+  height: 30px;
+  margin: 10%;
+  text-align: center;
+}
+
+.menu li:hover {
+  color: #3d4849;
+}
+
+img#stream {
+  display: block;
+  max-width: 100%;
+  width: 50%;
+  position: center;
+  margin: 0 auto;
+}
+
+h1 {
+  left: -40px;
+  position: relative;
+  text-align: center;
+  font-style: Serif;
+  display: block;
+  width: 70%;
+  position: center;
+  max-width: 100%;
+  margin: 0 auto;
+  color: azure;
+}
+
+h3 {
+  left: -40px;
+  position: relative;
+  text-align: center;
+  font-style: Serif;
+  display: block;
+  width: 77%;
+  position: center;
+  max-width: 100%;
+  margin: 0 auto;
+  color: azure;
+}
+
+h4 {
+  left: -40px;
+  position: relative;
+  text-align: center;
+  font-style: Serif;
+  display: block;
+  width: 70%;
+  position: center;
+  max-width: 100%;
+  margin: 0 auto;
+  color: azure;
+}
+
+h5 {
+  left: -40px;
+  position: relative;
+  text-align: center;
+  font-style: Serif;
+  display: block;
+  width: 70%;
+  position: center;
+  max-width: 100%;
+  margin: 0 auto;
+  color: azure;
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 56.25%;
+      /* 1rem = 9px */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+      font-size: 50%;
+      /* 1rem = 8px */
+  }
+}
+
+.ss {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2023;
+  width: 100%;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+header nav {
+  display: flex;
+  gap: 6rem
+}
+
+header nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  transition: color .3s ease
+}
+
+header nav a:hover {
+  color: var(--orange-03)
+}
+
+header .btn {
+  padding: .95rem 2.4rem;
+  border-radius: 3.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  transition: all .3s ease
+}
+
+header .btn.mobile {
+  display: none
+}
+
+header .btn:hover {
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, .3);
+}
+
+@media(max-width: 991px) {
+  header nav {
+      display: none
+  }
+}
+
+@media(max-width: 560px) {
+  header .btn.mobile {
+      display: block
+  }
+
+  header .btn.desktop {
+      display: none
+  }
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a,
+li {
+  transition: color 0.8s ease;
+}
+
+#menuToggle a {
+  color: azure;
+}
+
+#menuToggle a:hover {
+  color: #3d4849;
+}
+
+#menuToggle input {
+  display: block;
+  width: 55px;
+  height: 40px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 46px;
+  height: 7px;
+  margin-bottom: 6px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+  height: 59.4rem;
+  position: absolute;
+  width: calc(14rem + 2vw);
+  border-radius: 4%;
+  margin: -100px 0 0 -50px;
+  padding: 25px;
+  padding-top: 125px;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.menu li {
+  padding: 20px;
+  /* Ajuste o padding conforme necessário */
+  font-size: 24px;
+}
+
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+.neon-button {
+  background: white;
+  color: black;
+  border-radius: 100px;
+  padding: 16px 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.neon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Adicionando media queries para responsividade */
+@media (max-width: 768px) {
+  .menu {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0;
+      padding: 10px;
+  }
+
+  .menu a li {
+      font-size: 1.2rem;
+      margin: 5%;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  h1, h3, h4, h5 {
+      font-size: 1.5rem;
+      width: 90%;
+  }
+
+  img#stream {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0;
+      padding: 5px;
+  }
+
+  .menu a li {
+      font-size: 1rem;
+      margin: 2%;
+  }
+
+  .container {
+      padding: 5px;
+  }
+
+  h1, h3, h4, h5 {
+      font-size: 1.2rem;
+      width: 100%;
+  }
+
+  img#stream {
+      width: 100%;
+  }
+}
