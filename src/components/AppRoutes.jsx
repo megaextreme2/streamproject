@@ -8,28 +8,28 @@ import Login from "../templates/Login/Login"
 import Mensagem from "../templates/Mensagem/Mensagem"
 import MensagemLer from "../templates/Mensagem/MensagemLer"
 
-import Usuario from "../templates/Usuario/Usuario"
-import UsuarioEditar from "../templates/Usuario/UsuarioEditar"
-import UsuarioNovo from "../templates/Usuario/UsuarioNovo"
-import UsuariosLista from "../templates/Usuario/UsuariosLista"
+import Tutorial from "../templates/Usuario/Tutorial"
+import Comandos from "../templates/Usuario/Comandos"
+import Encantamentos from "../templates/Usuario/Encantamentos"
+import Racas from "../templates/Usuario/Racas"
+import Crafting from '../templates/Usuario/Crafting'
 
 const AppRoutes = () => {
   return (
     <div>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/ip" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpass" element={<ForgotPass />} />
 
         <Route path="/mensagem" element={<Mensagem />} />
         <Route path="/mensagemler" element={<MensagemLer />} />
-
-
-        <Route path="/usuario" element={<Usuario />} />
-        <Route path="/usuarioslista" element={<UsuariosLista />} />
-        <Route path="/usuarionovo" element={<UsuarioNovo />} />
-        <Route path="/usuarioeditar/:id" element={<UsuarioEditar />} />
+        <Route path="/crafting" element={<Crafting />} />
+        <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/racas" element={<Racas />} />
+        <Route path="/encantamentos" element={<Encantamentos />} />
+        <Route path="/comandos/" element={<Comandos />} />
 
       </Routes>
     </div>

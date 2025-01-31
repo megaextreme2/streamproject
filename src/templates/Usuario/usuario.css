@@ -1,0 +1,425 @@
+footer {
+  background-image: url('../../assets/images/download.jpeg');
+  padding: 10px;
+  text-align: center;
+}
+
+.streamTutorial {
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  width: 100%;
+  height: auto;
+  min-height: 700px; /* Aumenta a altura mínima */
+  padding: 20px;
+  font-family: 'Georgia', serif; /* Fonte que lembra um livro */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  text-align: justify; /* Justifica o texto */
+  color: #333; /* Cor do texto */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de página */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+#brilho{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+}
+#brilho2{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #b81414; /* cor da borda */
+}
+#brilho3{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #be7f42; /* cor da borda */
+}
+#brilho4{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #003366; /* cor da borda */
+}
+#brilho5{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #013220; /* cor da borda */
+}
+#brilho6{
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #00008B; /* cor da borda */
+}
+#an{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 28px;
+  font-style: oblique;
+}
+
+#hm{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 34px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+#ef{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+#tb{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 30px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+#ill{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 35px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+#drc{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 33px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.streamTutorial h1 {
+  grid-column: span 2; /* O título ocupa as duas colunas */
+  text-align: center;
+}
+
+.streamTutorial p {
+  margin: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 785px; /* Aumenta a altura do livro */
+  perspective: 1000px;
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.page {
+  position: relative;
+  width: 50%; /* Cada página ocupa metade do livro */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.content {
+  padding: 20px;
+  font-family: 'Georgia', serif; /* Fonte que lembra um livro */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  text-align: justify; /* Justifica o texto */
+  color: #333; /* Cor do texto */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de página */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Garante que o conteúdo ocupe toda a altura da página */
+}
+
+.content h1 {
+  text-align: center;
+}
+#racas{
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  display: absolute;
+  text-decoration: none;
+}
+#tr{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 25px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 28px;
+  font-style: oblique;
+}
+#ms{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 60px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 28px;
+  font-style: oblique;
+}
+#bl{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 42px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+#vip{
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+  display: absolute;
+  left: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #ffffe0;
+  font-size: 30px;
+  font-style: oblique;
+}
+.content p {
+  margin: 0;
+}
+
+#anao {
+  max-width: 100%; /* Garante que a largura máxima não ultrapasse 100% */
+  height: auto; /* Ajusta a altura automaticamente */
+  width: 100%; /* Define a largura da imagem como 50% do contêiner */
+}
+#mesa {
+  max-width: 100%; /* Garante que a largura máxima não ultrapasse 100% */
+  height: auto; /* Ajusta a altura automaticamente */
+  width: 70%; /* Define a largura da imagem como 50% do contêiner */
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+#bloco {
+  max-width: 100%; /* Garante que a largura máxima não ultrapasse 100% */
+  height: auto; /* Ajusta a altura automaticamente */
+  width: 70%; /* Define a largura da imagem como 50% do contêiner */
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.slick-slider, .slick-initialized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ajusta a largura */
+  height: auto; /* Ajusta a altura automaticamente */
+  max-width: 100%; /* Garante que a largura máxima não ultrapasse 100% */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px; /* Reduz o padding em telas menores */
+  }
+
+  .book {
+    height: 700px; /* Ajusta a altura do livro em telas menores */
+  }
+
+  .page {
+    width: 100%; /* Cada página ocupa toda a largura em telas menores */
+  }
+
+  #anao {
+    width: 70%; /* Ajusta a largura da imagem em telas menores */
+  }
+  #mesa{
+    width: 70%;
+  }
+  #bl{
+    width: 70%;
+  }
+  #vip{
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 5px; /* Reduz o padding em telas muito pequenas */
+  }
+
+  .book {
+    height: 600px; /* Ajusta a altura do livro em telas muito pequenas */
+  }
+
+  .page {
+    width: 100%; /* Cada página ocupa toda a largura em telas muito pequenas */
+  }
+
+  #anao {
+    width: 90%; /* Ajusta a largura da imagem em telas muito pequenas */
+  }
+  #mesa{
+    width: 90%;
+  }
+  #vip {
+    width: 90%; /* Ajusta a largura da imagem em telas muito pequenas */
+  }
+  #bl{
+    width: 90%;
+  }
+}
+/* Estiliza as setas de navegação do Slider */
+.slick-prev::before, .slick-next::before {
+  display: none;
+}
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 50%; /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 90px; /* Tamanho do ícone */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: black;
+}
+
+.slick-prev {
+  left: 25px; /* Posição à esquerda */
+}
+
+.slick-next {
+  right: 10px; /* Posição à direita */
+}
+
+/* Ajusta a posição das setas em telas menores */
+@media (max-width: 768px) {
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 5px;
+  }
+}
+
+/* Ajusta a posição das setas em telas muito pequenas */
+@media (max-width: 480px) {
+  .slick-prev, .slick-next {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .slick-prev {
+    left: 2px;
+  }
+
+  .slick-next {
+    right: 2px;
+  }
+}
+
+/* Estiliza os botões para torná-los expansivos */
+#ef, #tb, #ill, #drc, #hm, #an, #tr, #ms, #bl, #vip {
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+  display: block; /* Certifique-se de que o display é block ou inline-block */
+  width: 100%; /* Define a largura como 100% do contêiner pai */
+  max-width: 300px; /* Define uma largura máxima */
+  padding: 10px 20px; /* Adiciona preenchimento ao redor do conteúdo */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffe0;
+  font-size: 20px; /* Ajusta o tamanho da fonte */
+  font-style: oblique;
+  box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+}
+
+/* Ajusta o tamanho dos botões em telas menores */
+@media (max-width: 768px) {
+  button, #ef, #tb, #ill, #drc {
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    padding: 8px 16px; /* Ajusta o preenchimento */
+  }
+}
+
+/* Ajusta o tamanho dos botões em telas muito pequenas */
+@media (max-width: 480px) {
+  button, #ef, #tb, #ill, #drc {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 6px 12px; /* Ajusta o preenchimento */
+  }
+}

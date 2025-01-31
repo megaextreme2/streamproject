@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import logo from '../../assets/images/system-logo_128_x_128.png';
 import './Login.css';
 
 const ForgotPass = () => {
